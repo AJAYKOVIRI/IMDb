@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDB Clone</title>
+  <link rel="stylesheet" href="movie.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+   <!-- FontAwesome -->
+   <script
+   src="https://kit.fontawesome.com/a8162db7fd.js"
+   crossorigin="anonymous"
+ ></script>
+</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark px-2 sticky-top">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="index.html">
+          <span class="pt-4 site-name">
+            <img src="D:\VS Code files\th.jpg" style="height: 48px; width: 98px;">
+          </span>
+        </a>
+
+        <!--IMDb Search Bar-->
+        <div id="SearchBar" class="mx-auto">
+          <form action="" autocomplete="off">
+            <input
+              type="search"
+              placeholder=" Explore here..... "
+              id="search"
+              autocomplete="off"
+            />
+
+            <button id="SearchButton">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+          </form>
+        </div>
+
+        <div id="ShowFav"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div id="ajayContainer" class="d-flex justify-content-between">
+      <!-- MAIN  SECTION-->
+      <main id="main-section">
+        <!-- Suggestions container-->
+        <div id="Suggestions-container" class="d-flex">
+          <p id="empty-search-text" class="text-muted fs-1 pt-5 ms-4">
+            <h1>Hello Movie Lover !!</h1>
+          </p>
+
+          <div id="card-container">
+          </div>
+        </div>
+      </main>
+
+      <!-- FAVORITES SECTION -->
+      <section id="markSection">
+        <h2> Movies marked by you  :</h2>
+
+        <div id="empty-fav-text">
+          <p class="fs-5 mx-3 text-muted center">
+            you didn't marked any movie yet !!
+          </p>
+        </div>
+
+        <div id="markMovieContainer" class=".flex-column mx-auto">
+        
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
